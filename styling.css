@@ -24,3 +24,21 @@ body{
     font-size: 1.5em;
     height: 30px;
 }
+#slider{
+    margin: 10px auto;
+}
+#circle{
+    height: 3px;
+    width: 3px;
+    background: black;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+#thicknessInput{
+    position: relative;
+}

@@ -14,7 +14,8 @@
         <input type="color" list id="paintColor">
         </div>
         
-        <div>
+        <div class="input" id="thicknessInput">
+            <div id="circle"></div>
 <!--        for the circle.-->
         </div>
         
@@ -26,7 +27,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
     $(function(){
-        $("#slider").slider();
+        $("#slider").slider({
+            min: 3,
+            max: 30,
+            slide: function(event,ui){
+                $("#circle").height(ui.value);
+                $("#circle").width(ui.value);
+            }
+        });
     });
     </script>
 </body>
