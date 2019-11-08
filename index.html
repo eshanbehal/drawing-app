@@ -51,7 +51,25 @@
             }
         });
         
+        //declare variables
         
+        //paintingerasing or not
+        var paint = false;
+        
+        //painting or erasing
+        var paint_erase = "paint";
+        
+        //get the canvas and context
+        var canvas = document.getElementById("paint");
+        var ctx = canvas.getContext("2d");
+        
+        //get the canvas container
+        var container = $("#container");
+        
+        //mouse position
+        var mouse = {x: 0,y: 0};
+        
+        //onload load saved work from localStorage
     </script>
 </body>
 </html>
